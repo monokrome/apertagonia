@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "gonia": "^0.3.9",
-    "happy-dom": "^18.0.0",
+    "happy-dom": "^20.0.2",
     "jscpd": "^4.0.7",
     "prettier": "^3.8.1",
     "typescript": "^5.7.0",
