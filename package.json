@@ -1,0 +1,42 @@
+{
+  "name": "apertagonia",
+  "version": "0.1.0",
+  "description": "Accessibility directive library for Gonia",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "prettier --check src/ tests/",
+    "format": "prettier --write src/ tests/"
+  },
+  "license": "BSD-2-Clause",
+  "peerDependencies": {
+    "gonia": ">=0.3.0"
+  },
+  "dependencies": {
+    "focus-trap": "^7.6.0",
+    "tabbable": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "gonia": "^0.3.9",
+    "happy-dom": "^18.0.0",
+    "jscpd": "^4.0.7",
+    "prettier": "^3.8.1",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.17"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}

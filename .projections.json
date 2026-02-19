@@ -1,0 +1,21 @@
+{
+  "src/directives/*.ts": {
+    "alternate": "tests/{}.test.ts",
+    "type": "directive"
+  },
+  "src/util/*.ts": {
+    "alternate": "tests/util/{}.test.ts",
+    "type": "util"
+  },
+  "tests/*.test.ts": {
+    "alternate": "src/directives/{}.ts",
+    "type": "test"
+  },
+  "tests/util/*.test.ts": {
+    "alternate": "src/util/{}.ts",
+    "type": "test"
+  },
+  "src/types.ts": {
+    "type": "types"
+  }
+}
